@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        .link{
+            background-color: #06ff82;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="name" required></p>
+        <fieldset> 
+            <legend>Gender</legend>
+            <p> 
+                Male <input type="radio" name=Gender id="gender" required>Female <input type="radio" name=Gender id="gender" required>
+            </p>
+        </fieldset>
+        <p> Address <textarea name="address" id="address" cals="10" rows="8"></textarea> </p>
+
+        <p> Email<input type="email" name="email" id="email" required> </p> 
+        <P> PinCode <input type="number" name="pincode" id="pincode" ></P>
+
+        <h2> PaymentInformatio</h2>
+        <p> Card Type:
+            <select name="CardType" id="CardType">
+                <option value="">---Select a card type--- </option>
+                <option value="visa">Visa</option>
+                <option value="Rupay">VVVisa</option>
+                <option value="MasterCard">Master Card</option>
+            </select>
+        </p>
+
+        <p> Expire Date <input type="date" name="date" id="date" required> </p>
+
+        <p> CVV: <input type="password" name="cvv" id="cvv" ></p>
+
+        <a class="link"  href="https://github.com/Abhay2912" >PayNow</a>
+    </form>
+</body>
+</html>
